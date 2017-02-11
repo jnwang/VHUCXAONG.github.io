@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
-    <link>http://example.org/post/index.xml</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <title>Posts on Test Blog</title>
+    <link>/post/index.xml</link>
+    <description>Recent content in Posts on Test Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Feb 2017 19:32:50 -0800</lastBuildDate>
-    <atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>test</title>
-      <link>http://example.org/post/test/</link>
+      <link>/post/test/</link>
       <pubDate>Fri, 10 Feb 2017 19:32:50 -0800</pubDate>
       
-      <guid>http://example.org/post/test/</guid>
-      <description>&lt;p&gt;##This is a Test Blog&lt;/p&gt;
+      <guid>/post/test/</guid>
+      <description>
+
+&lt;h2 id=&#34;this-is-a-test-blog&#34;&gt;This is a Test Blog&lt;/h2&gt;
+
+&lt;p&gt;fdfddddddddddddddddddffffffffffdfffffffffffff&lt;/p&gt;
 </description>
     </item>
     
