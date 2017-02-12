@@ -8,10 +8,3 @@ script:
   - hugo
 after_success:
   - ./deploy.py
-env:
-    global:
-        - SSH_KEY="id_rsa"
-        - GIT_NAME="Ruochen Jiang"
-        - GIT_EMAIL="ruochenj@sfu.ca"
-        - SOURCE_DIR="public"
-        - DEPLOY_BRANCH="source"
