@@ -1,14 +1,14 @@
 +++
 date = "2017-02-13T09:08:31-08:00"
 title = "instructor"
-draft = true
-tags = ["tag1","tag2"]
-categories = ["category"]
-description = ""
+tags = ["instructor"]
+categories = ["instructor"]
+description = "an instructor blog"
 images = ["/2016/10/image.jpg"]
 
 +++
-####This is a instructor blog to teach you how to post a blog on this website.
+
+#### This is a instructor blog to teach you how to post a blog on this website.
 1. Install Hugo: install Hugo by [this link](https://gohugo.io/overview/installing/).
 2. Clone the repo.
 3. Go to the repo directory.
@@ -27,6 +27,6 @@ images = ["/2016/10/image.jpg"]
 9. Once you think it works well, send pull request to commit.
 
 
-####ABOUT THE AUTHOR
+#### ABOUT THE AUTHOR
 INSTRUCTOR
 SFU CMPT 843
