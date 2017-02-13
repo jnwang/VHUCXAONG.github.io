@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ruochenj on Test Blog</title>
+    <link>https://vhucxaong.github.io/blog/tags/ruochenj/index.xml</link>
+    <description>Recent content in Ruochenj on Test Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://vhucxaong.github.io/blog/tags/ruochenj/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>another test</title>
+      <link>https://vhucxaong.github.io/blog/2017/02/another-test/</link>
+      <pubDate>Sat, 11 Feb 2017 17:08:25 -0800</pubDate>
+      
+      <guid>https://vhucxaong.github.io/blog/2017/02/another-test/</guid>
+      <description>
+
+&lt;h2 id=&#34;another-test&#34;&gt;Another Test&lt;/h2&gt;
+
+&lt;p&gt;fdfdcccccasdsdsdsdsxa
+dsdsd&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>another test</title>
+      <link>https://vhucxaong.github.io/blog/2017/02/another-test/</link>
+      <pubDate>Sat, 11 Feb 2017 17:08:25 -0800</pubDate>
+      
+      <guid>https://vhucxaong.github.io/blog/2017/02/another-test/</guid>
+      <description>
+
+&lt;h2 id=&#34;another-test&#34;&gt;Another Test&lt;/h2&gt;
+
+&lt;p&gt;fdfdcccccasdsdsdsdsxa
+dsdsd&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
