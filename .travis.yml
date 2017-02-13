@@ -10,6 +10,7 @@ env:
         - GIT_EMAIL="ruochenj@sfu.ca"
         - SOURCE_DIR="public"
         - DEPLOY_BRANCH="source"
+        - STATIC_DIR="static"
 
 before_install:
 - openssl aes-256-cbc -K $encrypted_7123cbeebab3_key -iv $encrypted_7123cbeebab3_iv
