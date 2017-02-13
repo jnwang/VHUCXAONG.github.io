@@ -11,12 +11,15 @@ env:
         - SOURCE_DIR="public"
         - DEPLOY_BRANCH="source"
 
+before_install:
+    - openssl aes-256-cbc -K $encrypted_7123cbeebab3_key -iv $encrypted_7123cbeebab3_iv -in id_rsa.enc -out ~\/.ssh/id_rsa -d
 
-install:
-    - go get -u github.com/spf13/hugo
-    - go install github.com/spf13/hugo
+before_script:
+    - git clone --branch v2 https://github.com/go-yaml/yaml $GOPATH/src/gopkg.in/yaml.v2
+    - go get -u -v github.com/spf13/hugo
 
 script:
+    - git clone https://github.com/rcoedo/hugo-steam-theme ./themes/hugo-steam-theme
     - hugo
 
 after_success:
