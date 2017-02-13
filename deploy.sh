@@ -57,6 +57,7 @@ BLOG_DIR='blog/'
 TARGET_DIR=$(mktemp -d /tmp/$REPO_NAME.XXXX)
 REV=$(git rev-parse HEAD)
 git clone --branch ${TARGET_BRANCH} ${REPO} ${TARGET_DIR}
+rm -rf ${TARGET_DIR}"/blog"
 mkdir ${TARGET_DIR}"/blog"
 rsync -rt --delete --exclude=".git" --exclude=".travis.yml" $SOURCE_DIR/ $TARGET_DIR"/blog"/
 rsync -rt $STATIC_DIR/ $TARGET_DIR/
