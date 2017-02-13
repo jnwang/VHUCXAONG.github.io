@@ -24,7 +24,9 @@
 &lt;li&gt;Clone the repo.&lt;/li&gt;
 &lt;li&gt;Go to the repo directory.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;hugo new post/your-blog-name.md&lt;/code&gt; and generate a markdown file in directory /content/post&lt;/li&gt;
-&lt;li&gt;Open the blog file and the generated config block is as following.&lt;/li&gt;
+&lt;li&gt;Open the blog file and the generated config block is as following.
+
+&lt;ul&gt;
 &lt;li&gt;date = &amp;ldquo;2017-02-13T09:08:31-08:00&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;title = &amp;ldquo;instructor&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;draft = true&lt;/li&gt;
@@ -32,6 +34,7 @@
 &lt;li&gt;categories = [&amp;ldquo;category&amp;rdquo;]&lt;/li&gt;
 &lt;li&gt;description = &amp;ldquo;&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;images = [&amp;ldquo;/2016/10/image.jpg&amp;rdquo;]&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Delete &lt;code&gt;draft = true&lt;/code&gt; and change other configs like tags and category.&lt;/li&gt;
 &lt;li&gt;Edit your blog and make sure the footer of your blog is the same as this instructor, which presents your name.&lt;/li&gt;
 &lt;li&gt;Once you finish your blog, run &lt;code&gt;hugo server -w&lt;/code&gt; and see the website on          &lt;em&gt;localhost:1313/blog/&lt;/em&gt; to see if it is presented as you want.&lt;/li&gt;
