@@ -55,7 +55,7 @@ fi
 REPO_NAME=$(basename $REPO)
 BLOG_DIR='blog/'
 TARGET_DIR=$(mktemp -d /tmp/$REPO_NAME.XXXX)
-echo "TARGET_DIR is"
+echo "TARGET_DIR is:"
 echo TARGET_DIR
 REV=$(git rev-parse HEAD)
 git clone --branch ${TARGET_BRANCH} ${REPO} ${TARGET_DIR}
