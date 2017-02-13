@@ -55,12 +55,16 @@ fi
 REPO_NAME=$(basename $REPO)
 BLOG_DIR='blog/'
 TARGET_DIR=$(mktemp -d /tmp/$REPO_NAME.XXXX)
-echo "TARGET_DIR is:"
-echo $TARGET_DIR
 REV=$(git rev-parse HEAD)
 git clone --branch ${TARGET_BRANCH} ${REPO} ${TARGET_DIR}
+echo "First"
+ls
 rsync -rt --delete --exclude=".git" --exclude=".travis.yml" $SOURCE_DIR/ $TARGET_DIR/
+echo "First1"
+ls
 cd $TARGET_DIR
+echo "First2"
+ls
 git add -A .
 git commit --allow-empty -m "Built from commit $REV"
 git push $REPO $TARGET_BRANCH
