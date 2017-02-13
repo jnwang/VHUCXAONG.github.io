@@ -1,224 +1,381 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Traditional vs. Modern Database Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
 
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+      body {
+        padding-top: 20px;
+      }
+    </style>
 
-<meta property="og:title" content="Test Blog" />
-<meta property="og:description" content="A simple test blog" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://vhucxaong.github.io/" />
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-89857052-1', 'auto');
+  ga('send', 'pageview');
 
-
-<meta property="og:updated_time" content="2017-02-11T19:55:51-08:00"/>
-
-
-
-
-
-
-
-
-
-
-
-
-<meta name="generator" content="Hugo 0.19-DEV" />
-
-
-    
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Blog",
-  
-  "headline": "Test Blog",
-  "url" : "https://vhucxaong.github.io/",
-  "author": {
-    "@type": "Person",
-    "name": ""
-  },
-  
-  
-  "dateModified": "2017-02-11T19:55:51-08:00",
-  
-  
-  
-  "keywords": "another-test,test,test-blog,jnwang,ruochenj,test,"
-  
-  ,
-  "description":"A simple test blog"
-}
 </script>
-
-
-    <link rel="canonical" href="https://vhucxaong.github.io/">
-
-    <title>Test Blog</title>
-
-    <!-- combined, minified CSS -->
-    <link href="https://vhucxaong.github.io/css/style.css" rel="stylesheet" integrity="sha384-qRVpIj9hSzsBhmO8Y7YEKF2UFra2sJQtl9V/uFKKDvy&#43;Wjh9zgTku6VRgT8YdPoD" crossorigin="anonymous">
-
-    
-    <!-- RSS 2.0 feed -->
-    <link href="https://VHUCXAONG.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Test Blog" />
-    
-
-    
-
-    
-
-    
-
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></sc\
+ript>
+    <![endif]-->
   </head>
 
   <body>
 
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="nav blog-nav">
-          <a class="nav-link active" href="https://vhucxaong.github.io/">Home</a>
-          
-          
-          
-        </nav>
-      </div>
-    </div>
-
-    <header class="blog-header">
-      <div class="container">
-        <h1 class="blog-title"><a href="https://vhucxaong.github.io/" rel="home">Test Blog</a></h1>
-        <p class="lead blog-description">A simple test blog</p>
-      </div>
-    </header>
 
     <div class="container">
-      <div class="row">
-        <div class="col-sm-8 blog-main">
 
-          
+<h2 id="cmpt843">CMPT 843: Traditional vs. Modern Database Systems (SFU, Spring 2017)</h2>
 
+<h3 id="motivation">Motivation</h3>
 
-
-
-
-<article class="blog-post">
-  <header>
-    <h2 class="blog-post-title"><a href="https://vhucxaong.github.io/2017/02/third-test/">third test</a></h2>
-    <p class="blog-post-meta"><time datetime="2017-02-11T19:55:51-08:00">Sat Feb 11, 2017</time> by  in 
-<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/test" rel="category tag">test</a>
+<p>The Big Data movement is attracting an increasing number of new researchers to work on data processing related research. On the other hand, the database community has been thinking about how to address data-processing challenges for over 40 years. Numerous elegant ideas were proposed in the past and many of them are being widely applied in industry. Therefore, there is a high need to educate new researchers to learn classical database knowledge and make sure they can stand on the shoulders of giants rather than reinvent the wheel.</p>
 
 
-<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/test" rel="tag">test</a>
+<h3 id="topics">Topics</h3>
 
+<p>Because of the purpose above, the course will be divided into two parts.</p>
+
+<ol>
+<li>The first part will guide students to read classical database papers that were published before 2000 on the topics including Data Model, Relational Database Systems, Transaction Management, Query Optimization, Data Cube, and Approximate Query Processing. </li>
+
+<li>The second part will be mostly about the papers published in the recent ten years on the topics including MapReduce, Spark, Column Store, NoSQL, NewSQL, and ML over SQL. </li>
+</ol>
+
+<h3 id="objectives">Objectives</h3>
+
+<p>Through this traditional vs. modern view of data processing, the students should gain a much deeper understanding on the Big Data movement and form their own opinion on what's novel about Big Data systems.</p>
+
+
+<p>Furthermore, since this is a graduate seminar, another important objective is to train students to master basic skills for being a researcher. The course will create a number of opportunities for students to learn how to read a paper, how to write a paper review, how to give a good research talk, and how to ask questions during a talk?
 </p>
-  </header>
-  The third test fdfdfcasdsdsdsdsd
-  <a href='https://vhucxaong.github.io/2017/02/third-test/'>Read more →</a>
-</article> 
+
+<h3 id="logistics">Logistics</h3>
+
+<ul>
+  <li><b>Instructor: </b><a href="http://cs.sfu.ca/~jnwang/">Jiannan Wang</a></li>
+  <li><b>Time: </b>Monday, 12:30 - 2:20pm; Wednesday, 12:30 - 1:20pm</li>
+  <li><b>Location: </b>AQ 4150 (Mon), WMC 3210 (Wed)</li>
+  <li><b>Office Hours: </b>By appointment. <a href="mailto:jnwang@sfu.ca">E-mail me</a> to book a slot</li>
+</ul>
+
+
+<h3 id="pre-requisites">Pre-requisites</h3>
+<ul>
+    <li> Students should have taken undergraduate Database Systems courses (See <a href="https://portal.cs.sfu.ca/portal/outlines/1171-CMPT-354-D100/">CMPT 354</a> and <a href="https://portal.cs.sfu.ca/portal/outlines/1171-CMPT-454-D100/">CMPT 454</a> course outlines)</li>
+</ul>
 
 
 
+<h3 id="grading">Grading</h3>
 
-<article class="blog-post">
-  <header>
-    <h2 class="blog-post-title"><a href="https://vhucxaong.github.io/2017/02/another-test/">another test</a></h2>
-    <p class="blog-post-meta"><time datetime="2017-02-11T17:08:25-08:00">Sat Feb 11, 2017</time> by  in 
-<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/another-test" rel="category tag">another-test</a>
+<ul>
+  <li>Paper Presentation: 25% </li>
+  <li>Questions: 10%</li>
+  <li>Paper Review: 20%</li>
+  <li>Blog Post: 10%</li>
+  <li>Final Project: 35% (3% plan + 16% poster + 16% report)</li>
+</ul>
 
+<h3 id="schedule">Schedule</h3>
 
-<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/ruochenj" rel="tag">ruochenj</a>
-
+<p>
+<mark>If you are a speaker, please see <a href="https://docs.google.com/document/d/16SnmjVV7tPULGl6e4T8zR2EhsRT63ys_-IgfMzhyq4o/edit?usp=sharing
+">this doc</a> about how to upload your slides after the presentation. <br/>If you ask any question in the Q/A sessions, please write down the questions in this <a href="https://docs.google.com/spreadsheets/d/1soK9Fh8RXJiNioJ-D_WNzYZ7wq6Wy5xe0M2BRVvAfRU/edit?usp=sharing">form</a> (one question per row). <mark>
 </p>
-  </header>
-  Another Test fdfdcccccasdsdsdsdsxa dsdsd
-  <a href='https://vhucxaong.github.io/2017/02/another-test/'>Read more →</a>
-</article> 
+
+<table class="table table-bordered">
+  <thead>
+    <tr class="info">
+      <td><b>Date</b></td>
+      <td><b>Topic</b></td>
+      <td><b>Content</b></td>
+      <td><b>Presenter</b></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>W 1/4</td>
+      <td>Course Objective I</td>
+      <td> Course Introduction and History of Database Systems</td>
+      <td> Jiannan [<a href="Lectures/intro.pdf">slides</a>]</td>
+    </tr>
+    <tr class="active">
+      <td>M 1/16</td>
+      <td>Course Objective II</td>
+      <td> Essential Skills Needed for a PhD Student (How to <a href='https://sfu-db.github.io/cmpt884-fall16/Papers/How%20to%20Read%20a%20Paper.pdf'>read</a> & <a href='https://sfu-db.github.io/cmpt884-fall16/Papers/review-writing.pdf'>review</a> a paper? How to give a <a href="https://sfu-db.github.io/cmpt884-fall16/Papers/giving-a-talk.pdf">talk?</a> How to <a href="https://www.amazon.com/Asking-Right-Questions-11th-Browne/dp/0321907957">ask</a> questions?)</td>
+      <td> Jiannan [<a href="Lectures/research-skills.pdf">slides</a>]</td>
+    </tr>
+
+    <tr class="info">
+        <td colspan="4" style="text-align:center"><b>Part I: Traditional Database Systems and Techniques (before 2000)</b></td>
+    </tr>
+
+    <tr>
+      <td>W 1/18</td>
+      <td>Background</td>
+      <td> <a href="Papers/p110-silberschatz-background.pdf">Database Systems: Achievements and Opportunities (1990)</a></td>
+      <td> Uzma [<a href = 'https://sfu-db.github.io/dbsystems/Lectures/Uzma Ali Database Systems Achievements and Opportunities.pdf'>slides</a>]</td>
+    </tr>
+
+    <tr class="active">
+      <td>M 1/23</td>
+      <td> Data Model</td>
+      <td> <a href="Papers/p377-codd.pdf">A Relational Model of Data for Large Shared Data Banks (1970)</a> <br/>
+<a href="Papers/datamodel.pdf">What Goes Around Comes Around (1960-1970, Sec I~IV only)</a></td>
+      <td> Chang [<a href = 'https://sfu-db.github.io/dbsystems/Lectures/Relational-Data-Model.pdf'>slides</a>]<br/> Shiqi [<a href = 'https://sfu-db.github.io/dbsystems/Lectures/What goes around Comes around.pdf'>slides</a>]</td>
+
+    </tr>
+
+    <tr>
+      <td>W 1/25</td>
+      <td rowspan="2" style="vertical-align:middle"> Traditional RDBMS</td>
+      <td> <a href="Papers/history-of-system-r.pdf">A History and Evaluation of System R (1981)</a></td>
+      <td> Jingzhi [<a href = 'https://sfu-db.github.io/dbsystems/Lectures/Presentation to System R.pdf'>slides</a>] </td>
+    </tr>
+    <tr>
+      <td>M 1/30</td>
+      <td> <a href="Papers/postgres.pdf">The Design of Postgres (1986)</a> <br/>
+<a href="Papers/GammaDatabaseMachine.pdf">The Gamma database machine project (1990)</a></td>
+      <td> Bhagyasri [slides] <br/> Jitin [<a href = 'https://sfu-db.github.io/dbsystems/Lectures/Gamma-Database.pdf'>slides</a>]</td>
+    </tr>
+
+    <tr>
+      <td>W 2/1</td>
+      <td rowspan="2" style="vertical-align:middle"> Query Optimization</td>
+      <td> <a href="Papers/p23-selinger.pdf">Access Path Selection in a Relational Database Management System (1979)</a></td>
+      <td> Pouya [slides] </td>
+    </tr>
+    <tr>
+      <td>M 2/6</td>
+      <td> <a href="Papers/Volcano.pdf">The Volcano Optimizer Generator: Extensibility and Efficient Search (1993)</a> <br/>
+<a href="Papers/p261-avnur.pdf">Eddies: Continuously Adaptive Query Processing (2000)</a></td>
+      <td>   Zicun [<a href = 'https://sfu-db.github.io/dbsystems/Lectures/volcano_slides.pdf'>slides</a>] <br/> Samaneh [slides] </td>
+    </tr>
+
+    <tr class="active">
+      <td>W 2/8</td>
+      <td rowspan="2" style="vertical-align:middle"> Transaction Management</td>
+      <td> <a href="Papers/GrayLocks.pdf">Granularity of Locks and Degrees of Consistency in a Shared Data Base (1976, Part 1 only)</a></td>
+      <td> Anuj [slides] </td>
+    </tr>
+    <tr class="active">
+      <td>M 2/20</td>
+      <td> <a href="Papers/GrayLocks.pdf">Granularity of Locks and Degrees of Consistency in a Shared Data Base (1976, Part 2 only)</a> <br/>
+<a href="Papers/occ-tods1981.pdf">On Optimistic Methods for Concurrency Control (1981)</a></td>
+      <td> Jinglin [slides] <br/> Dhivya [slides] </td>
+    </tr>
 
 
 
+    <tr class="info">
+        <td colspan="4" style="text-align:center"><b>Part II: Modern Database Systems and Techniques (after 2000)           </b></td>
+    </tr>
 
-<article class="blog-post">
-  <header>
-    <h2 class="blog-post-title"><a href="https://vhucxaong.github.io/2017/02/test/">test</a></h2>
-    <p class="blog-post-meta"><time datetime="2017-02-10T19:32:50-08:00">Fri Feb 10, 2017</time> by  in 
-<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/test-blog" rel="category tag">test blog</a>
-
-
-<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/jnwang" rel="tag">jnwang</a>
-
-</p>
-  </header>
-  This is a Test Blog fdfddddddddddddddddddffffffffffdfffffffffffff
-  <a href='https://vhucxaong.github.io/2017/02/test/'>Read more →</a>
-</article> 
+    <tr>
+      <td>W 2/22</td>
+      <td> Background</td>
+      <td> <a href="Papers/bigdatawhitepaper.pdf">Challenges and Opportunities with Big Data (2011)</a></td>
+      <td> Tatyana [slides] </td>
+    </tr>
 
 
+    <tr class="active">
+      <td>M 2/27</td>
+      <td rowspan="2" style="vertical-align:middle"> Column Store</td>
+      <td> <a href="Papers/stonebraker-cstore.pdf">C-store: a column-oriented DBMS (2005)</a> <br/>
+<a href="Papers/dremel.pdf">Dremel: Interactive Analysis Of Web-Scale Datasets (2010)</a></td>
+      <td> Qingyuan [slides] <br/> Rui [slides]</td>
+    </tr>
+    <tr class="active">
+      <td>W 3/1</td>
+      <td> <a href="Papers/abadi-sigmod08.pdf">Column-Stores vs. Row-Stores: How Different Are They Really? (2012)</a></td>
+      <td> Pranav [slides] </td>
+    </tr>
+
+    <tr>
+      <td>M 3/6</td>
+      <td rowspan="3" style="vertical-align:middle"> MapReduce and Beyond</td>
+      <td> <a href="Papers/mapreduce-osdi2004.pdf">MapReduce: Simplified Data Processing on Large Clusters (2003)</a> <br/>
+<a href="Papers/SIGMOD09_benchmark_dewitt_stonebraker.pdf">A Comparison of Approaches to Large-Scale Data Analysis (2009)</a></td>
+      <td> Bikramdeep [slides] <br/> Saeed [slides]</td>
+    </tr>
+    <tr>
+      <td>W 3/8</td>
+      <td> <a href="Papers/nsdi12-final138.pdf">Resilient Distributed Datasets: A Fault-tolerant Abstraction for In-memory Cluster Computing (2012)</a> </td>
+      <td> Yejia [slides] </td>
+    </tr>
+    <tr>
+      <td>M 3/13</td>
+      <td> <a href="Papers/p13-xin-shark.pdf">Shark: SQL and Rich Analytics at Scale (2013) </a>  <br/> <a href="Papers/SparkSQLSigmod2015.pdf">Spark SQL: Relational Data Processing in Spark (2015)</a>
+      <td> Guiliang [slides] <br/>  Mohamad [slides]</td>
+    </tr>
 
 
+    <tr class="active">
+      <td>W 3/15</td>
+      <td rowspan="2" style="vertical-align:middle"> NoSQL</td>
+      <td> <a href="Papers/bigtable-osdi06.pdf">Bigtable: A Distributed Storage System for Structured Data (2006)</a>
+      <td> Michael [slides] </td>
+    </tr>
+    <tr class="active">
+      <td>M 3/20</td>
+      <td> <a href="Papers/decandia07dynamo.pdf">Dynamo: Amazon's Highly Available Key-Value Store (2007)</a> <br/>
+<a href="Papers/CAP-12years.pdf">CAP Twelve Years Later: How the "Rules" Have Changed (2012)</a></td>
+      <td> Jitesh [slides] <br/> Poonam [slides]</td>
+    </tr>
+
+    <tr>
+      <td>W 3/22</td>
+      <td rowspan="3" style="vertical-align:middle"> NewSQL</td>
+      <td> <a href="Papers/harizopoulos-2008.pdf">OLTP Through the Looking Glass, and What We Found There (2008)</a>
+      <td> Amit [slides] </td>
+    </tr>
+    <tr>
+      <td>M 3/27</td>
+      <td> <a href="Papers/Hekaton.pdf">Hekaton: SQL Server's Memory-optimized OLTP Engine (2013)</a> <br/>
+<a href="Papers/hyper.pdf">Efficiently Compiling Efficient Query Plans for Modern Hardware (2011)</a></td>
+      <td> Biswarup [slides] <br/> Ashkan [slides] </td>
+    </tr>
+    <tr>
+      <td>W 3/29</td>
+      <td> <a href="Papers/nosql_sql.pdf"> Scalable SQL and NoSQL data stores (2010)</a>
+      <td> Gurpreet [slides]</td>
+    </tr>
+
+    <tr class="info">
+        <td colspan="4" style="text-align:center"><b>Final Project</b></td>
+    </tr>
+
+    <tr>
+      <td>TBD </td>
+      <td> Final Project</td>
+      <td> Final Project Poster Session</td>
+      <td> Groups </td>
+    </tr>
+
+  </tbody>
+
+</table>
 
 
+<!--
+<h3 id="papers">List of Papers</h3>
 
-        </div> <!-- /.blog-main -->
+<mark>Please quickly scan each paper and rank them based on your preference. Submit the ranking to <a href="https://goo.gl/forms/0kIJwedXis81OUb33">here</a> by the end of Sunday 1/8<mark>
 
-        <aside class="col-sm-3 offset-sm-1 blog-sidebar">
-  
-  <section class="sidebar-module sidebar-module-inset">
-    <h4>About</h4>
-    <p>A simple Test Blog</p>
-  </section>
-  
-
-  
-  
-
-  <section class="sidebar-module">
-    <h4>Recent Posts</h4>
-    <ol class="list-unstyled">
-      
-      <li><a href="/2017/02/third-test/">third test</a></li>
-      
-      <li><a href="/2017/02/another-test/">another test</a></li>
-      
-      <li><a href="/2017/02/test/">test</a></li>
-      
+ <h4 id="part1">Part I: Traditional Database Systems and Techniques (before 2000)</h4>
+ <h5>Background</h5>
+    <ol>
+        <li> <a href="Papers/p110-silberschatz-background.pdf">Database Systems: Achievements and Opportunities (1990)</a> </li>
     </ol>
-  </section>
 
-  
+<h5>Data Model</h5>
+    <ol start="2">
+        <li> <a href="Papers/p377-codd.pdf">A Relational Model of Data for Large Shared Data Banks (1970)</a> </li>
+        <li> <a href="Papers/datamodel.pdf">What Goes Around Comes Around (1960-1970, Sec I~IV only)</a></li>
+     </ol>
 
-  
-  <section class="sidebar-module">
-    <h4>Links</h4>
-    <ol class="list-unstyled">
-      
-      <li><a href="https://github.com/VHUCXAONG/">Github</a></li>
-      
-      <li><a href="https://google.com/">Google</a></li>
-      
+ <h5>Traditional RDBMS</h5>
+      <ol start="4">
+        <li> <a href="Papers/history-of-system-r.pdf">A History and Evaluation of System R (1981)</a> </li>
+        <li> <a href="Papers/postgres.pdf">The Design of Postgres (1986)</a> </li>
+        <li> <a href="Papers/GammaDatabaseMachine.pdf">The Gamma database machine project (1990)</a></li>
+      </ol>
+
+ <h5>Transaction Management</h5>
+      <ol start="7">
+        <li> <a href="Papers/GrayLocks.pdf">Granularity of Locks and Degrees of Consistency in a Shared Data Base (1976, Part 1 only)</a> </li>
+        <li> <a href="Papers/GrayLocks.pdf">Granularity of Locks and Degrees of Consistency in a Shared Data Base (1976, Part 2 only)</a> </li>
+        <li> <a href="Papers/occ-tods1981.pdf">On Optimistic Methods for Concurrency Control (1981)</a>  </li>
+      </ol>
+       <h5>Query Optimization</h5>
+      <ol start="10">
+        <li> <a href="Papers/p23-selinger.pdf">Access Path Selection in a Relational Database Management System (1979)</a> </li>
+        <li> <a href="Papers/Volcano.pdf">The Volcano Optimizer Generator: Extensibility and Efficient Search (1993)</a>  </li>
+        <li> <a href="Papers/p261-avnur.pdf">Eddies: Continuously Adaptive Query Processing (2000)</a> </li>
+      </ol>
+       <h5>Interactive Analytics</h5>
+      <ol start="13">
+        <li> <a href="Papers/cube.pdf">Data Cube: A Relational Aggregation Operator Generalizing Group-by, Cross-tab, and Sub-totals (1997) </a> </li>
+        <li> <a href="Papers/p159-zhao-rolap.pdf">An Array-Based Algorithm for Simultaneous Multidimensional Aggregates (1997)</a>  </li>
+        <li> <a href="Papers/online-aggregation.pdf">Informix under CONTROL: Online Query Processing (2000)</a> </li>
+      </ol>
+
+ <h4 id="part2">Part II: Modern Database Systems and Techniques (after 2000)</h4>
+     <h5>Background</h5>
+      <ol start="16">
+        <li> <a href="Papers/bigdatawhitepaper.pdf">Challenges and Opportunities with Big Data (2011)</a> </li>
     </ol>
-  </section>
-  
-</aside>
+
+    <h5>MapReduce and Beyond</h5>
+      <ol start="17">
+        <li> <a href="Papers/mapreduce-osdi2004.pdf">MapReduce: Simplified Data Processing on Large Clusters (2003)</a> </li>
+        <li> <a href="Papers/SIGMOD09_benchmark_dewitt_stonebraker.pdf">A Comparison of Approaches to Large-Scale Data Analysis (2009)</a></li>
+        <li> <a href="Papers/nsdi12-final138.pdf">Resilient Distributed Datasets: A Fault-tolerant Abstraction for In-memory Cluster Computing (2012)</a> </li>
+      </ol>
+
+    <h5>Column Store</h5>
+      <ol start="20">
+        <li> <a href="Papers/stonebraker-cstore.pdf">C-store: A Column-oriented DBMS (2005)</a> </li>
+        <li> <a href="Papers/dremel.pdf">Dremel: Interactive Analysis Of Web-Scale Datasets (2010)</a></li>
+        <li><a href="Papers/abadi-sigmod08.pdf">Column-Stores vs. Row-Stores: How Different Are They
+        Really?(2012)</a></li>
+      </ol>
+
+    <h5>NoSQL</h5>
+      <ol start="23">
+        <li> <a href="Papers/bigtable-osdi06.pdf">Bigtable: A Distributed Storage System for Structured Data (2006)</a> </li>
+        <li><a href="Papers/decandia07dynamo.pdf">Dynamo: Amazon's Highly Available Key-Value Store (2007)</a></li>
+        <li> <a href="Papers/CAP-12years.pdf">CAP Twelve Years Later: How the "Rules" Have Changed (2012)</a></li>
+      </ol>
+
+    <h5>NewSQL</h5>
+      <ol start="26">
+        <li> <a href="Papers/harizopoulos-2008.pdf">OLTP Through the Looking Glass, and What We Found There (2008)</a> </li>
+        <li><a href="Papers/Hekaton.pdf">Hekaton: SQL Server's Memory-optimized OLTP Engine (2013)</a></li>
+        <li> <a href="Papers/hyper.pdf">Efficiently Compiling Efficient Query Plans for Modern Hardware (2011)</a></li>
+      </ol>
+
+        <h5>ML and SQL</h5>
+      <ol start="29">
+        <li> <a href="Papers/systemML.pdf">SystemML: Declarative machine learning on MapReduce (2011)</a> </li>
+        <li><a href="Papers/madlib-vldb2012.pdf">The MADlib analytics library: or MAD skills, the SQL (2012)</a></li>
+        <li> <a href="Papers/SparkSQLSigmod2015.pdf">Spark SQL: Relational Data Processing in Spark (2015)</a></li>
+
+      </ol>
+ -->
 
 
-      </div> <!-- /.row -->
-    </div> <!-- /.container -->
+    <h3 id="references">References</h3>
+    <ul>
+        <li><a href="http://www.redbook.io/">Redbook - 5th Edition (Peter Bailis, Joseph M. Hellerstein, Michael Stonebraker)</a> </li>
+        <li><a href="https://github.com/rxin/db-readings">Readings in Database  (Reynold Xin) </a> </li>
+        <li><a href="https://sites.google.com/site/cs286fall2014/">CS286: Implementation of Database Systems (UC Berkeley, Fall 2014)</a> </li>
+        <li><a href="http://web.eecs.umich.edu/~mozafari/fall2015/eecs584/">EECS 584: Advanced Database Management Systems (UMichgan, 2015 Fall)</a> </li>
+        <li><a href="http://columbia.github.io/systems-bigdata-class/">Big Data Systems (Columbia, 2016 Spring)</a> </li>
+        <li><a href="http://www.cs.cmu.edu/~pavlo/courses/fall2013/">15-799: Advanced Topics in Database Systems (CMU, 2013 Fall)</a> </li>
+</ul>
 
-    <footer class="blog-footer">
-      <p>
-      
-      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
-      
-      </p>
-      <p>
-      <a href="#">Back to top</a>
-      </p>
-    </footer>
+
+
+    <div class="row"><h4>&nbsp; </h4><hr><p class="text-center">&nbsp; © Jiannan Wang 2017</p></div>
+
+
+
+    </div>
 
   </body>
-
 </html>
