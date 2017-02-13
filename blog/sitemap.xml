@@ -2,7 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vhucxaong.github.io/blog/2017/02/instructor/</loc>
+    <lastmod>2017-02-13T09:08:31-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhucxaong.github.io/blog/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vhucxaong.github.io/blog/tags/instructor/</loc>
+    <lastmod>2017-02-13T09:08:31-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vhucxaong.github.io/blog/categories/instructor/</loc>
+    <lastmod>2017-02-13T09:08:31-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vhucxaong.github.io/blog/post/</loc>
+    <lastmod>2017-02-13T09:08:31-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vhucxaong.github.io/blog/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://vhucxaong.github.io/blog/</loc>
+    <lastmod>2017-02-13T09:08:31-08:00</lastmod>
     <priority>0</priority>
   </url>
   
