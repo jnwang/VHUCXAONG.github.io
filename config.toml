@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "Test Blog"
-baseurl = "https://VHUCXAONG.github.io/blog/"
+baseurl = "https://VHUCXAONG.github.io/"
 theme = "hugo-theme-bootstrap4-blog"
 # number of posts to show on home/category/tag pages (Default: 10)
 paginate = 5
