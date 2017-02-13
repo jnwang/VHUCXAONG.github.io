@@ -33,7 +33,7 @@ paginate = 5
 #
 [params]
   # Site author
-  author = "ruochenj"
+  # author = "ruochenj"
 
   # Description/subtitle for homepage (can be Markdown)
   description = "A simple test blog"

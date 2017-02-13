@@ -1,5 +1,5 @@
 +++
-tags = ["test"]
+tags = ["jnwang"]
 categories = ["test blog"]
 description = ""
 images = ["/2016/10/image.jpg"]
