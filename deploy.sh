@@ -59,6 +59,10 @@ REV=$(git rev-parse HEAD)
 git clone --branch ${TARGET_BRANCH} ${REPO} ${TARGET_DIR}
 echo "First"
 ls
+echo "TAr"
+cd $TARGET_DIR
+ls
+cd ..
 rsync -rt --delete --exclude=".git" --exclude=".travis.yml" $SOURCE_DIR/ $TARGET_DIR/
 echo "First1"
 ls
